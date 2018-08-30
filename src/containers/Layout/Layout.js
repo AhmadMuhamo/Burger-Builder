@@ -22,7 +22,6 @@ export default class Layout extends Component {
             <Fragment>
                 <Toolbar drawerToggleClicked={this.sidedrawerToggleHandler}/>
                 <Sidedrawer open={this.state.showSideDrawer} closed={this.sidedrawerClosedHandler} />
-                <div>Toolbar, Siderbar, Backdrop</div>
                 <main className={css.Content}>
                     {this.props.children}
                 </main>
