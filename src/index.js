@@ -5,8 +5,9 @@ import './index.css';
 import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
 
+const location = window.location || {};
 const app = (
-    <BrowserRouter>
+    <BrowserRouter basename={location.pathname || '/portfolio/projects/burger-builder/'}>
         <App />
     </BrowserRouter>
 );
